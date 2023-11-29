@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1622610607501-32ac9c927216?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar li {
+  display: inline;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #010101;
+  font-family: Metrophobic;
+}
+a:hover {
+  color: #ea4c89;
+}
+
+.button-1 {
+  background-color: #ea4c89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #f082ac;
+}
+.button-2 {
+  border-style: solid;
+  border-color: #ea4c89;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #ea4c89;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+
+  margin-left: 20px;
+}
+
+.button-2:hover,
+.button-2:focus {
+  background-color: #ea4c89;
+  color: #ffffff;
+}
+
+#maincontent1 {
+  color: #555454a8;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 63px;
+  font-weight: 900;
+  line-height: 68px;
+}
+
+.mainContent {
+  padding: 70px;
+  padding-left: 200px;
+}
+
+.mainBtn {
+  padding: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Hide NavBar content */
+  .navbar ul li:nth-child(2),
+  li:nth-child(3),
+  li:nth-child(4),
+  li:nth-child(5),
+  li:nth-child(6),
+  li:nth-child(7) {
+    display: none;
+  }
+  #maincontent1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .mainContent {
+    padding: 50px;
+    padding-left: 50px;
+  }
+
+  .mainBtn {
+    padding: 20px;
+  }
+  .mainBtn button:nth-child(2) {
+    display: none;
+  }
+}
